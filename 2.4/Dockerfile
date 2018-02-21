@@ -145,4 +145,4 @@ RUN set -eux; \
 COPY httpd-foreground /usr/local/bin/
 
 EXPOSE 80
-CMD ["httpd-foreground"]
+CMD ["bash"]
