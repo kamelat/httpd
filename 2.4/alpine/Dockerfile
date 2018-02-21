@@ -54,6 +54,7 @@ RUN set -eux; \
 		# mod_lua
 		lua-dev \
 		make \
+		bash \
 		# mod_http2
 		nghttp2-dev \
 		pcre-dev \
@@ -133,4 +134,4 @@ RUN set -eux; \
 COPY httpd-foreground /usr/local/bin/
 
 EXPOSE 80
-CMD ["httpd-foreground"]
+CMD ["bash"]
