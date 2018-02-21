@@ -43,6 +43,7 @@ RUN set -eux; \
 		ca-certificates \
 		coreutils \
 		dpkg-dev dpkg \
+		bash \
 		gcc \
 		gnupg \
 		libc-dev \
@@ -54,7 +55,6 @@ RUN set -eux; \
 		# mod_lua
 		lua-dev \
 		make \
-		bash \
 		# mod_http2
 		nghttp2-dev \
 		pcre-dev \
@@ -134,4 +134,4 @@ RUN set -eux; \
 COPY httpd-foreground /usr/local/bin/
 
 EXPOSE 80
-CMD ["bash"]
+CMD /bin/bash
