@@ -131,6 +131,8 @@ RUN set -eux; \
 	apk add --virtual .httpd-rundeps $runDeps; \
 	apk del .build-deps
 
+EXPOSE 45004
+
 COPY httpd-foreground /usr/local/bin/
 
 CMD /bin/bash
